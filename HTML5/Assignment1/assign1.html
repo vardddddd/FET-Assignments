@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <h1>Veronica Creators</h1>
+        <h3>Registation Form</h3>
+        <link rel="stylesheet" href="assign1.css">
+        <script type="text/javascript" src="assign1.js">
+        </script>
+        </head>
+        <body>
+            <form id="registration" action="#">
+               
+                    <table>
+                    
+                    <tr>
+                        <td>Name:</td>
+                        <td><input type="text" name="name" autofocus></td>
+                        </tr>
+                        <tr>
+                            <td>Email:</td>
+                            <td><input type="email" name="email" required autofocus pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$"></td>
+                            </tr>
+                         <tr>
+                                <td>Mobile No:</td>
+                                <td><input type="tel" name="mobno" required autofocus pattern="[789]{1}[0-9]{9}"></td>
+
+                         </tr>
+                         <tr>
+                            <td>Type of Music you like:</td>
+                            <td><input list="list1" type="text">
+                                <datalist id="list1">
+                                <option>Rap</option>
+                                <option>Classical</option>
+                                <option>Western</option>
+                                </datalist>
+                                </td>
+                            </td>
+                        </tr>
+
+                            <tr>
+                            <td>Credit/Debit Card No.:</td>
+                            <td><input type="number" name="ccn" autofocus pattern="[789][0-9]{9}"></td>
+    
+                            </tr>
+                            <tr>
+                            <td>CVV:</td>
+                            <td><input type="password" name="cvv" ></td>
+                                </tr>
+                            <tr>
+                                <td>Prize:</td>
+                                <td><input type="number" id="prize"></td>
+                            </tr>
+                            <tr>
+                                <td>Referral Code</td>
+                                <td><input type="text" id="code"></td>
+                                <td><button type="button" id="apply" onclick="reffer()">Apply</button></td>
+                            </tr>
+                            <tr>
+                                <td>Final Price:</td>
+                                <td><input type="number" id="final" value="2000"></td>
+                            </tr>
+                            <tr>
+                                <td>Password:</td>
+                                <td><input type="password" name="pwd"></td>
+                                </tr>
+                                <tr>
+                                    <td>Confirm Password:</td>
+                                    <td><input type="password" name="uname" name="cpwd"></td>
+                                    </tr>
+                                   
+                            </table>
+                            <div>
+                                <button type="submit">Submit</button>
+                                <button type="reset" name="submit1"> Reset</button>
+                                </div>
+                            
+                        
+               
+                </form>
+            </body>
+    </html>

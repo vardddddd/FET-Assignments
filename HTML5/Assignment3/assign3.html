@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <h2>Drag and Drop</h2>
+        <style>
+            .box1{
+                width: 350px;
+                height: 70px;
+                padding: 10px;
+                border:1px solid black
+            }
+            </style>
+        <script type="text/javascript" src="drag.js">
+        </script>
+        </head>
+        <body>
+            <p>Drag the image into Box</p>
+            <div class="box1" id="box1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                </div>
+                <br>
+            <img src="europa.jpg" id="img1" draggable="true" ondragstart="drag(event)" width="300" height="60"></img>
+            </body>
+    </html>

@@ -1,0 +1,20 @@
+table{
+    border-collapse:separate;
+    border-width: 2px;
+    border-style: double;
+    border-spacing: 3px;
+}
+th
+{
+    text-align: left;
+    padding: 10px;
+    background-color: grey;
+}
+td
+{
+text-align: center;
+padding: 10px;
+}
+tr:nth-of-type(even) {
+    background-color:greenyellow;
+  }
