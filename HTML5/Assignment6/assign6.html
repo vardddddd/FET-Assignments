@@ -5,6 +5,7 @@
 <body>
     
     <canvas id="myCanvas" style="border:1px solid #000000;width:100%;height:100%;">
+        <canvas id="canvas" width=300 height=125></canvas>   
 </canvas>
 <script>
     var canvas = document.getElementById('myCanvas');
@@ -14,24 +15,65 @@ var context = canvas.getContext('2d');
 
 //The path to the image that we want to add.
 var imgPath = 'europa.jpg';
+var imgPath1='europa.jpg';
+var imgPath2='europa.jpg';
 
 //Create a new Image object.
 var imgObj = new Image();
+var imgObj1=new Image();
+var imgObj2=new Image();
 
 //Set the src of this Image object.
 imgObj.src = imgPath;
+imgObj1.src=imgPath1;
+imgObj2.src=imgPath2;
 
 //the x coordinates
-var x =0;
+//var x =0;
 
 //the y coordinates
-var y =0;
-
+//var y =0;
+//imgObj1.style.width="50px";
+//imgObj1.style.left="60px";
 
 //When our image has loaded.
 imgObj.onload = function(){
  //Draw the image onto the canvas.
- context.drawImage(imgObj, x, y,64,64);
+ context.drawImage(imgObj, 40,80,64,64);
+}
+imgObj1.onload = function(){
+ //Draw the image onto the canvas.
+ context.drawImage(imgObj1, 120,80,64,64);
+}
+imgObj2.onload = function(){
+ //Draw the image onto the canvas.
+ context.drawImage(imgObj2, 200,80,64,64);
+
+}
+var canvas1=document.getElementById("canvas");
+var ctx=canvas1.getContext("2d");
+var cw=canvas1.width;
+var ch=canvas1.height;
+var cx=cw/2;
+var cy=ch/2;
+
+draw();
+
+function draw() {
+  var gradient = ctx.createRadialGradient(cx,ch,50,cx,ch,100);
+  var stop=1/8;
+  gradient.addColorStop(stop*0, 'transparent');
+  gradient.addColorStop(stop*7, 'red');
+  gradient.addColorStop(stop*6, 'orange');
+  gradient.addColorStop(stop*5, 'yellow');
+  gradient.addColorStop(stop*4, 'green')
+  gradient.addColorStop(stop*3, 'blue');
+  gradient.addColorStop(stop*2, 'Indigo');
+  gradient.addColorStop(stop*1, 'violet');
+  gradient.addColorStop(stop*8, 'transparent');
+  ctx.fillStyle = gradient;
+  ctx.fillRect(0,0,cw,ch);
+  ctx.fill();
 }
 </script>
 
