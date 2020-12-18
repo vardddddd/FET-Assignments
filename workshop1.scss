@@ -1,0 +1,32 @@
+@mixin inpt($border_radius:3px, $width:300px, $height:36px, $font:SegoUI, $font_size:13px,$padding_left:10px )
+{
+    border-radius:$border_radius; 
+     width:$width; 
+     height:$height;
+     font-style:$font;
+     font-size:$font_size;
+     padding-left:$padding_left;  
+}
+@mixin col($backgrouncolor,$color)
+{
+    background-color:$backgrouncolor;
+    color:$color;
+}
+.normal1
+{
+    @include inpt;
+}
+.disable1
+{
+    @include inpt;
+    @include col(#eeeeee,#999999);
+    cursor: not-allowed; 
+}
+.error1
+{
+    $color:#f44336;
+    @include inpt;
+    @include col(#fde7e1,#f44336);
+     border:1px solid $color
+
+}
