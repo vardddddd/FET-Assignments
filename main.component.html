@@ -1,0 +1,24 @@
+
+Search:<input type="text" [(ngModel)]='searchText' placeholder="Search Catagory">
+<br>
+{{search}}
+<br>
+<p><b>{{'John singh'|changeSpace:'-'}}</b></p>
+<p>{{'John singh'|changeSpace:'$'}}</p>
+<!--<button [parentCount]='cartCount' (notify)='getCartCount($event)' >Add to Cart</button>-->
+<app-child  ></app-child>
+<h1>{{ dateObj | date:"medium" }}</h1>
+<div class="row text-center" *ngIf='image && image.length'>
+  <div class="col-md-4 mb-4" *ngFor="let item of image | searchPipe : searchText : 'imageCategory'" >
+     <div class="card h-100 " >
+        <img class="card-img-top" [src]='item.imageSrc' [alt]='item.ImageName'>
+        <div class="card-body">
+           <h4 class="card-title">{{item.imageCategory}}</h4>
+           <p class="card-text">{{item.imageDescription}}</p>
+           <p>{{a|currency|uppercase}}</p>
+        </div>
+        <div class="card-footer py-4">
+           <a href="#" class="btn btn-info" (click)='show()'>Read More &raquo;</a>
+        </div>
+     </div>
+  </div>
