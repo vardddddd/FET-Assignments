@@ -9,3 +9,6 @@ domain seperated applications
 
 
 https://teams.microsoft.com/l/meetup-join/19%3ameeting_NWU4OGIxZTEtNDVhMi00NGU3LThlMmUtYThlYjVkZmMzMWRl%40thread.v2/0?context=%7b%22Tid%22%3a%2237709cfb-f3b2-4648-aea1-9c828a886147%22%2c%22Oid%22%3a%225456bdc5-0a65-4744-ad6d-37cc44e82b42%22%7d
+
+//Sevicenow HR Transform
+https://teams.microsoft.com/l/meetup-join/19%3ameeting_OGExZTNiMmUtOGI2NC00YzQwLWIwZjYtMWQxMDQ1NmZlN2Rj%40thread.v2/0?context=%7b%22Tid%22%3a%227c7fea3f-e205-448e-b10a-701c54916e39%22%2c%22Oid%22%3a%222785855c-0a75-454c-a834-351af162274e%22%7d
